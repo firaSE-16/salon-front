@@ -24,7 +24,7 @@ export const UserProvider = ({ children }) => {
   };
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = import.meta.env.VITE_API_URL || "http://demo.local/api";
+  const BASE_URL = import.meta.env.VITE_API_URL || "https://salon-backend-production-3973.up.railway.app/api";
 
 async function tryLogin(baseUrl, credentials) {
   const candidates = [
